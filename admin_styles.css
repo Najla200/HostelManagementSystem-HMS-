@@ -1,0 +1,304 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+  background-color: #800000; /* Maroon */
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.header-text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.header-text h1 {
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+}
+
+.header-text p {
+  font-size: 16px;
+  margin: 2px 0 0;
+  font-family: 'Arial', sans-serif;
+  color: #e0e0e0;
+  text-align: left;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5fa; /* Light gray background */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  display: flex;
+  flex: 1;
+  min-height: calc(100vh - 80px); /* Adjust based on header height */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 345px; /* Wider sidebar */
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0; /* Ensure no padding constrains button width */
+}
+
+.sidebar li {
+  margin-bottom: 40px; /* Increased spacing between buttons */
+}
+
+.sidebar a {
+  display: block; /* Full-width button effect */
+  padding: 12px 15px; /* Increased padding for taller buttons */
+  background-color: #d3d3d3; /* Maroon background */
+  color: #800000;
+  text-decoration: none;
+  font-size: 18px; /* Increased font size */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  /*background-color: #600000; /* Darker maroon on hover */
+   background-color: #2F4F4F; /* Dark Slate Gray for hover */
+  color: #ffffff;
+}
+
+.sidebar a.active {
+background-color: #333333;
+color: #ffffff;
+ /* background-color: #600000; /* Darker maroon for active link */
+  font-weight: bold;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent white */
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.content h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  color: #800000;
+  margin-bottom: 15px;
+}
+
+/* Form styling */
+.content form {
+  background-color: transparent;
+  padding: 0;
+}
+
+.content label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+.content input[type="text"],
+.content select,
+.content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.content input[type="text"]:focus,
+.content select:focus,
+.content textarea:focus {
+  outline: none;
+  border-color: #800000;
+}
+
+.content textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.content input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #800000;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content input[type="submit"]:hover {
+  background-color: #600000;
+}
+
+/* Table styling */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+.content th,
+.content td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.content th {
+  background-color: #f8f8f8;
+  color: #800000;
+}
+
+.content td select {
+  padding: 5px;
+}
+
+
+
+/* Success message */
+.success-message {
+  color: green;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .sidebar a {
+    padding: 10px 12px; /* Slightly smaller padding for smaller screens */
+    font-size: 16px; /* Slightly smaller font size on mobile */
+  }
+
+  .sidebar li {
+    margin-bottom: 12px; /* Slightly less spacing on mobile */
+  }
+
+  .content {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    height: 50px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 20px;
+  }
+
+  .header-text p {
+    font-size: 12px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .content input[type="text"],
+  .content select,
+  .content textarea,
+  .content input[type="submit"] {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  
+}
+
+.btn-edit {
+  background-color: #4CAF50; /* Green */
+}
+
+.btn-edit:hover {
+  background-color: #45a049;
+}
+
+.btn-delete {
+  background-color: #a7281f; /* Red */
+}
+
+.btn-delete:hover {
+  background-color: #9b1414;
+}
+.button-group {
+  display: flex;
+  gap: 30px; /* Adjust spacing between buttons here */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
