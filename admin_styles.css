@@ -14,6 +14,8 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
+  position: fixed;
+
 }
 
 .logo {
@@ -56,6 +58,7 @@ body {
   display: flex;
   flex: 1;
   min-height: calc(100vh - 80px); /* Adjust based on header height */
+  margin-top: 100px;
 }
 
 /* Sidebar */
@@ -301,4 +304,32 @@ color: #ffffff;
   gap: 30px; /* Adjust spacing between buttons here */
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+/* admin_styles.css - Footer */
+footer {
+  background-color: #800000; /* Maroon */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
 
+.footer-content {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

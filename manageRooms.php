@@ -115,5 +115,6 @@
       }, 5000); // 5000 milliseconds = 5 seconds
     }
   </script>
+  <?php include 'footer.php'; ?>
 </body>
 </html>

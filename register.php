@@ -28,5 +28,6 @@
     <input type="submit" value="Register">
     <p>Already registered? <a href="login.php">Login here</a></p>
   </form>
+  <?php include 'footer.php'; ?>
 </body>
 </html>

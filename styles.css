@@ -45,7 +45,7 @@ header {
 /* Body styling */
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url('home.jpeg'); /* Replace with your image path */
+  /*background-image: url('home.jpeg');  Replace with your image path */
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the image */
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
@@ -192,4 +192,33 @@ a:hover {
     padding: 8px;
     font-size: 13px;
   }
+}
+/* admin_styles.css - Footer */
+footer {
+  background-color: #800000; /* Maroon */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-content {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }

@@ -28,5 +28,6 @@
 
     <input type="submit" value="Login">
   </form>
+  <?php include 'footer.php'; ?>
 </body>
 </html>
